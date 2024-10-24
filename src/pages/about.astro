@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import H1 from "../components/H1.astro";
+import Main from "../components/Main.astro";
+import TicTacToe from "../components/Svelte/TicTacToe.svelte";
+---
+
+<Layout title="About">
+    <Main>
+        <div class="mb-12">
+            <H1 text="Cosi Jean è felice" />
+        </div>
+        <TicTacToe client:visible />
+    </Main>
+</Layout>
